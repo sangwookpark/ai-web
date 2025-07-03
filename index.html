@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop 소개 - 한국 대중음악의 세계</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'korean': ['Noto Sans KR', 'sans-serif'],
+                    },
+                    colors: {
+                        'kpop-purple': '#6366f1',
+                        'kpop-pink': '#ec4899',
+                        'kpop-blue': '#0ea5e9',
+                        'kpop-gradient-from': '#667eea',
+                        'kpop-gradient-to': '#764ba2',
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in-down': 'fadeInDown 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-korean antialiased">
+    <!-- Hero Section -->
+    <header class="relative min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-1000"></div>
+            <div class="absolute bottom-20 left-40 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex items-center justify-center min-h-screen text-center px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-6xl md:text-8xl font-black text-white mb-4 tracking-tight">
+                        <span class="bg-gradient-to-r from-white to-pink-200 bg-clip-text text-transparent">
+                            K-Pop
+                        </span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white/90 mb-8 font-medium">
+                        한국 대중음악의 세계로 여러분을 초대합니다
+                    </p>
+                    <div class="text-6xl animate-bounce-slow">🎵</div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="mt-12">
+                    <button class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-pink-500 to-purple-600 rounded-full shadow-2xl hover:shadow-pink-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1">
+                        <span class="relative z-10">탐험하기</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-8 py-4">
+                <a href="#about" class="nav-link group relative px-4 py-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
+                    <span class="relative z-10">K-Pop이란?</span>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                </a>
+                <a href="#history" class="nav-link group relative px-4 py-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
+                    <span class="relative z-10">역사</span>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                </a>
+                <a href="#genres" class="nav-link group relative px-4 py-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
+                    <span class="relative z-10">장르</span>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                </a>
+                <a href="#artists" class="nav-link group relative px-4 py-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
+                    <span class="relative z-10">아티스트</span>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                </a>
+                <a href="#global" class="nav-link group relative px-4 py-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
+                    <span class="relative z-10">글로벌 영향</span>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative">
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        K-Pop<span class="text-indigo-600">이란?</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            K-Pop(케이팝)은 한국의 대중음악을 가리키는 용어로, 1990년대부터 시작되어 현재까지 전 세계적으로 큰 인기를 얻고 있는 음악 장르입니다.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            단순히 음악을 넘어서 패션, 댄스, 뮤직비디오, 그리고 팬덤 문화까지 포괄하는 종합적인 엔터테인먼트 문화입니다.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                            <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div class="text-2xl">🎤</div>
+                                <span class="font-medium text-gray-800">강력한 보컬과 랩</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div class="text-2xl">💃</div>
+                                <span class="font-medium text-gray-800">완벽한 안무와 퍼포먼스</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div class="text-2xl">🎬</div>
+                                <span class="font-medium text-gray-800">고품질 뮤직비디오</span>
+                            </div>
+                            <div class="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div class="text-2xl">👥</div>
+                                <span class="font-medium text-gray-800">체계적인 그룹 시스템</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-8 text-white text-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                            <div class="text-8xl mb-4">🎭</div>
+                            <h3 class="text-2xl font-bold mb-2">K-Pop 퍼포먼스</h3>
+                            <p class="text-indigo-100">음악과 시각적 예술의 완벽한 조화</p>
+                        </div>
+                        
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-pink-400 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-yellow-400 rounded-full opacity-20 animate-pulse animation-delay-1000"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        K-Pop의 <span class="text-indigo-600">역사</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-indigo-500 to-purple-600 rounded-full"></div>
+                    
+                    <!-- Timeline items -->
+                    <div class="space-y-12">
+                        <div class="relative flex items-center">
+                            <div class="flex-1 pr-8 text-right">
+                                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                    <div class="text-sm text-indigo-600 font-semibold mb-2">1990년대</div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">1세대 K-Pop</h3>
+                                    <p class="text-gray-600">서태지와 아이들, H.O.T., S.E.S. 등이 K-Pop의 기초를 마련했습니다.</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold z-10 shadow-lg">
+                                1
+                            </div>
+                            <div class="flex-1 pl-8"></div>
+                        </div>
+                        
+                        <div class="relative flex items-center">
+                            <div class="flex-1 pr-8"></div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold z-10 shadow-lg">
+                                2
+                            </div>
+                            <div class="flex-1 pl-8">
+                                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                    <div class="text-sm text-purple-600 font-semibold mb-2">2000년대</div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">2세대 K-Pop</h3>
+                                    <p class="text-gray-600">동방신기, 소녀시대, 원더걸스 등이 아시아 시장을 정복했습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-center">
+                            <div class="flex-1 pr-8 text-right">
+                                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                    <div class="text-sm text-pink-600 font-semibold mb-2">2010년대</div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">3세대 K-Pop</h3>
+                                    <p class="text-gray-600">BTS, 블랙핑크, 트와이스 등이 전 세계적인 성공을 거두었습니다.</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold z-10 shadow-lg">
+                                3
+                            </div>
+                            <div class="flex-1 pl-8"></div>
+                        </div>
+                        
+                        <div class="relative flex items-center">
+                            <div class="flex-1 pr-8"></div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold z-10 shadow-lg">
+                                4
+                            </div>
+                            <div class="flex-1 pl-8">
+                                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                    <div class="text-sm text-red-600 font-semibold mb-2">2020년대</div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">4세대 K-Pop</h3>
+                                    <p class="text-gray-600">aespa, ITZY, (G)I-DLE 등이 새로운 트렌드를 만들어가고 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genres Section -->
+        <section id="genres" class="py-20 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        다양한 <span class="text-indigo-600">장르</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🎵</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">팝 (Pop)</h3>
+                            <p class="text-gray-600">캐치한 멜로디와 훅이 특징인 가장 대중적인 장르입니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🎸</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">록 (Rock)</h3>
+                            <p class="text-gray-600">강렬한 기타 사운드와 파워풀한 보컬이 특징입니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🎤</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">힙합 (Hip-Hop)</h3>
+                            <p class="text-gray-600">랩과 비트가 중심이 되는 장르로 젊은 세대에게 인기가 높습니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-500 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">💖</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">R&B</h3>
+                            <p class="text-gray-600">소울풀한 보컬과 부드러운 멜로디가 특징입니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🎹</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">발라드</h3>
+                            <p class="text-gray-600">감정적인 가사와 아름다운 멜로디로 사랑받는 장르입니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🎆</div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">일렉트로닉</h3>
+                            <p class="text-gray-600">전자음악과 신디사이저가 특징인 현대적인 장르입니다.</p>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-green-500 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artists Section -->
+        <section id="artists" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        대표 <span class="text-indigo-600">아티스트</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-3xl text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                👑
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">BTS</h3>
+                            <p class="text-gray-600 text-sm">빌보드 1위를 달성한 최초의 K-Pop 그룹으로 전 세계적인 성공을 거두었습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-3xl text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                💎
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">BLACKPINK</h3>
+                            <p class="text-gray-600 text-sm">강렬한 퍼포먼스와 글로벌 어필로 세계적인 걸그룹이 되었습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-red-500 rounded-full flex items-center justify-center text-3xl text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                🌟
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">TWICE</h3>
+                            <p class="text-gray-600 text-sm">귀여운 컨셉과 중독성 있는 곡으로 아시아 전역에서 사랑받고 있습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-3xl text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                🦋
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">NewJeans</h3>
+                            <p class="text-gray-600 text-sm">Y2K 컨셉과 독특한 음악 스타일로 4세대를 대표하는 그룹입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Impact Section -->
+        <section id="global" class="py-20 bg-gradient-to-b from-white to-indigo-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        글로벌 <span class="text-indigo-600">영향</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-4xl font-bold text-indigo-600 mb-2 impact-number">200+</div>
+                        <p class="text-gray-600 font-medium">전 세계 국가에서 K-Pop 팬덤 활동</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-4xl font-bold text-purple-600 mb-2 impact-number">12억+</div>
+                        <p class="text-gray-600 font-medium">유튜브 K-Pop 관련 영상 조회수 (연간)</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-4xl font-bold text-pink-600 mb-2 impact-number">$5B+</div>
+                        <p class="text-gray-600 font-medium">K-Pop 산업의 연간 경제적 가치</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-4xl font-bold text-red-600 mb-2 impact-number">1위</div>
+                        <p class="text-gray-600 font-medium">빌보드 차트 K-Pop 아티스트 순위</p>
+                    </div>
+                </div>
+                
+                <!-- Description -->
+                <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl p-8 text-white text-center shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4">한류의 중심, K-Pop</h3>
+                    <p class="text-lg leading-relaxed text-indigo-100 max-w-4xl mx-auto">
+                        K-Pop은 단순한 음악을 넘어 한국 문화 전체를 세계에 알리는 중요한 역할을 하고 있습니다. 
+                        언어의 장벽을 넘어 음악과 퍼포먼스로 전 세계 사람들의 마음을 사로잡고 있으며, 
+                        이는 한국의 소프트 파워를 크게 증진시키고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">K-Pop과 함께하는 세계</h3>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                음악으로 하나되는 세상, K-Pop이 만들어가는 새로운 문화를 경험해보세요.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    🎵
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    🎤
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    💃
+                </div>
+                <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+                    🌍
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

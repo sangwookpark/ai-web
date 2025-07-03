@@ -1,2 +1,2 @@
 # ai-web
-web test by cur
+web test by cursor
